@@ -1,0 +1,20 @@
+font-family = "Monaco"
+font-size = 12
+
+theme = dark:iterm2-dark,light:iterm2-light
+
+window-padding-x = 8
+window-padding-y = 8
+
+cursor-style = block
+cursor-style-blink = false
+
+scrollback-limit = 100000
+
+copy-on-select = clipboard
+
+macos-option-as-alt = true
+
+# 透過設定 (背後の Slack/ブラウザを透かして見える)
+background-opacity = 0.92
+background-blur-radius = 20

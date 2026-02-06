@@ -1,0 +1,26 @@
+[include]
+	path = ~/.gitconfig.local
+[core]
+	pager = delta
+	hooksPath = ~/.config/git/hooks
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	side-by-side = true
+	line-numbers = true
+[merge]
+	conflictstyle = zdiff3
+[rerere]
+	enabled = true
+[push]
+	autoSetupRemote = true
+[fetch]
+	prune = true
+[pull]
+	rebase = true
+[alias]
+	s = status --short
+	l = log --oneline --graph -20
+	sw = switch
+	unstage = reset HEAD --

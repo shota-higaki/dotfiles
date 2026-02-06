@@ -1,0 +1,16 @@
+#!/bin/bash
+# Global pre-commit hook: gitleaks で秘密情報の漏洩を防止
+# このフックは全リポジトリの git commit 時に自動実行される
+
+# rebase 中はスキップ
+if [ -d "$(git rev-parse --git-dir)/rebase-merge" ] || \
+   [ -d "$(git rev-parse --git-dir)/rebase-apply" ]; then
+  exit 0
+fi
+
+if ! command -v gitleaks &> /dev/null; then
+  echo "gitleaks is not installed. Skipping secret scan."
+  exit 0
+fi
+
+gitleaks git --pre-commit --staged --verbose
