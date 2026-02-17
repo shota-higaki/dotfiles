@@ -13,7 +13,7 @@ brew "bat"
 brew "ripgrep"
 brew "jq"
 brew "httpie"
-brew "tldr"
+brew "tlrc"
 brew "ni"
 
 # Git

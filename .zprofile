@@ -1,2 +1,2 @@
 # .zprofile — ログインシェルでのみ実行される設定
-# brew shellenv は .zshenv に記載済み (全シェルで適用)
+# brew shellenv は .zshrc に記載済み (対話シェルで適用)
