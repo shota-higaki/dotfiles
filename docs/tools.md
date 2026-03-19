@@ -103,12 +103,17 @@ http -f POST api/upload file@image.png        # ファイルアップロード
 http -v GET api/endpoint                      # ヘッダー込みの詳細出力
 ```
 
-### tldr (man の要約版)
+### tealdeer (man の要約版)
+
+Rust 製の高速な tldr クライアント。コマンドの実用的な使い方を簡潔に表示する。
 
 ```bash
 tldr tar        # tar の実用的な使い方を表示
 tldr git stash  # git stash の使い方を表示
+tldr --update   # ページデータベースを更新
 ```
+
+> **Note**: `tldr` は非推奨。代替として tealdeer (`brew install tealdeer`) を使用。コマンド名は同じ `tldr`。
 
 ### ni (パッケージマネージャ自動選択)
 

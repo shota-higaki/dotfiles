@@ -39,7 +39,7 @@ gh repo clone shota-higaki/dotfiles
 | Version Manager | [mise](https://mise.jdx.dev) | Node/Ruby/Python 等の統一バージョン管理 |
 | Git | [delta](https://github.com/dandavison/delta) / [gh](https://cli.github.com) | diff ハイライト, GitHub CLI |
 | CLI | [eza](https://github.com/eza-community/eza) / [bat](https://github.com/sharkdp/bat) / [ripgrep](https://github.com/BurntSushi/ripgrep) / [fzf](https://github.com/junegunn/fzf) / [zoxide](https://github.com/ajeetdsouza/zoxide) | モダン CLI ツール群 |
-| CLI (データ処理) | [jq](https://jqlang.github.io/jq/) / [httpie](https://httpie.io) / [tldr](https://tldr.sh) | JSON 処理, HTTP クライアント, man 要約 |
+| CLI (データ処理) | [jq](https://jqlang.github.io/jq/) / [httpie](https://httpie.io) / [tealdeer](https://github.com/tealdeer-rs/tealdeer) | JSON 処理, HTTP クライアント, man 要約 |
 | Package Manager | [ni](https://github.com/antfu-collective/ni) | プロジェクトに応じたパッケージマネージャ自動選択 |
 | Environment | [direnv](https://direnv.net) | プロジェクト別の環境変数管理 |
 | Security | [gitleaks](https://github.com/gitleaks/gitleaks) | 全リポジトリ共通の秘密情報漏洩防止 |
