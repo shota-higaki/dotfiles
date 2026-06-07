@@ -1,5 +1,14 @@
 [tools]
+# Infrastructure
 terraform = "latest"
+awscli = { version = "latest", symlink_bins = "true" }
+
+# Kubernetes
 kubectl = "latest"
 helm = "latest"
-awscli = { version = "latest", symlink_bins = "true" }
+
+# Runtimes
+node = "latest"
+bun = "latest"
+python = "latest"
+ruby = "latest"

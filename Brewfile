@@ -1,6 +1,10 @@
 # Terminal
 cask "ghostty"
 
+# AI CLI tools (公式推奨インストール方法)
+cask "claude-code"
+brew "gemini-cli"
+
 # Shell
 brew "sheldon"
 brew "starship"
@@ -22,6 +26,7 @@ brew "gh"
 
 # Security
 brew "gitleaks"
+brew "npq"        # パッケージ install 前に脆弱性/信頼性を自動監査
 
 # Environment
 brew "direnv"
