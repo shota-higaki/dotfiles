@@ -28,6 +28,16 @@ brew "gh"
 brew "gitleaks"
 brew "npq"        # パッケージ install 前に脆弱性/信頼性を自動監査
 
+# Git hooks (グローバル pre-commit からリポジトリ設定に委譲)
+brew "lefthook"
+
+# Docs / config tools
+brew "rulesync"
+brew "mdbook"     # mdbook-mermaid は mise (ubi) で管理
+
+# Python
+brew "uv"
+
 # Environment
 brew "direnv"
 

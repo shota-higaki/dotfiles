@@ -14,3 +14,15 @@ if ! command -v gitleaks &> /dev/null; then
 fi
 
 gitleaks git --pre-commit --staged --verbose
+
+# リポジトリに lefthook 設定があれば pre-commit コマンドを実行する
+# （core.hooksPath がグローバル設定のため、リポジトリ側フックはここから委譲する）
+repo_root="$(git rev-parse --show-toplevel 2>/dev/null)"
+if [ -n "$repo_root" ] && command -v lefthook >/dev/null 2>&1; then
+  for cfg in lefthook.yml lefthook.yaml .lefthook.yml .config/lefthook.yml; do
+    if [ -f "$repo_root/$cfg" ]; then
+      lefthook run pre-commit || exit 1
+      break
+    fi
+  done
+fi

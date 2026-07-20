@@ -1,4 +1,7 @@
 [tools]
+# Docs (mdbook 本体は brew、mermaid プラグインは brew formula が無いため ubi で取得)
+"ubi:badboy/mdbook-mermaid" = "latest"
+
 # Infrastructure
 terraform = "latest"
 awscli = { version = "latest", symlink_bins = "true" }
