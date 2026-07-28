@@ -1,6 +1,6 @@
 [tools]
-# Docs (mdbook 本体は brew、mermaid プラグインは brew formula が無いため ubi で取得)
-"ubi:badboy/mdbook-mermaid" = "latest"
+# Docs (mdbook 本体は brew、mermaid プラグインは brew formula が無いため GitHub リリースから取得)
+"github:badboy/mdbook-mermaid" = "latest"
 
 # Infrastructure
 terraform = "latest"
